@@ -123,6 +123,8 @@ public class ProjectSecurityConfig {
                     // also accept uppercase variants in case an OAuth client sends uppercase scope values
                     scope.add("OPENID");
                     scope.add("EMAIL");
+                    scope.add("ADMIN");
+                    scope.add("USER");
                 })
                 .tokenSettings(TokenSettings.builder()
                         .accessTokenTimeToLive(Duration.ofMinutes(10))
